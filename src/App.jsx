@@ -10,7 +10,7 @@ import About from './pages/About'
 
 function App() {
   return (
-    <div className='App bg-black px-8'>
+    <div className='App bg-black px-14 h-screen'>
       <Routes>
         <Route  path='/' element={<Layout />}
         >
