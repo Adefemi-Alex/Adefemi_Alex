@@ -1,23 +1,25 @@
 import React from 'react'
 import { navs } from '../api/navs'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { LuMoonStar } from "react-icons/lu";
 const Navbar = () => {
   const location = useLocation();
   return (
-    <nav className='px-10 flex justify-between items-center py-4'>
+    <nav className='px-16 flex justify-between items-center py-6'>
+      <Link to="/" className="block">
       <div className="flex space-x-1 items-center">
-      <div className="w-9 h-9 bg-green-700 rounded-full"></div>
-      <h1 className='text-xl font-bold text-zinc-100'>Alex Adefemi</h1>
+        <div className="w-9 h-9 bg-green-700 rounded-full"></div>
+        <h1 className='text-xl font-bold text-zinc-100'>Alex Adefemi</h1>
 
       </div>
-        <ul className='flex rounded-full  px-3 text-sm font-medium  shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur bg-zinc-800/90 text-zinc-200 ring-white/10'>  
+      </Link>
+        <ul className='flex rounded-full  px-3 space-x-4 font-medium  shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur bg-zinc-800/90 text-zinc-200 ring-white/10'>  
         {/* bg-white/90 ring-zinc-900/5 text-zinc-800*/}
             {navs.map(({name, link}) =>{
               return (
 
                 <li >
-                    <NavLink to={link} className={`relative block px-3 text-[0.72rem] py-2 transition hover:text-teal-500 dark:hover:text-teal-400  ${location.pathname == link && "text-teal-400"}`}>{name}</NavLink>
+                    <NavLink to={link} className={`relative block px-3 text-sm py-2 transition hover:text-teal-500 dark:hover:text-teal-400  ${location.pathname == link && "text-teal-400"}`}>{name}</NavLink>
                 </li>
           )
             })}
