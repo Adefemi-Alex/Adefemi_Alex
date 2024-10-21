@@ -1,11 +1,20 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import Images from "../../assets/yep.webp";
+import Img1 from "../../assets/img1.jpg";
+import Img2 from "../../assets/img2.jpg";
 import HomeWorks from './HomeWorks';
 
 
 const Home = () => {
+    const images =[
+        Img1,
+        Img2,
+        Img1,
+        Img2,
+        Img1
+        
+    ]
   return (
     <main>
       <section className="sm:px-8 mt-9">
@@ -32,9 +41,9 @@ const Home = () => {
 
       <section className="mt-16 sm:mt-20 bg-zinc-900 relative h-80 md:h-96">
         <div className="flex justify-center gap-5 -left-24 py-4 sm:gap-8 absolute ">
-          {[...Array(5)].map((_, index) => (
-            <div key={index} className={` w-52 md:w-72 ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} rounded-2xl`}>
-              <img alt="" src={Images} className="h-full w-full object-cover rounded-2xl" loading="lazy" style={{ color: "transparent" }} />
+          {[...Array(images.length)].map((_, index) => (
+            <div key={index} className={` w-52 md:w-72 ${index % 2 === 0 ? '-rotate-2' : 'rotate-2'} rounded-2xl`}>
+              <img alt="" src={images[index]} className="h-full w-full object-cover rounded-2xl" loading="lazy" style={{ color: "transparent" }} />
             </div>
           ))}
         </div>
