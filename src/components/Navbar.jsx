@@ -3,6 +3,7 @@ import { navs } from '../api/navs'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { LuMoonStar } from "react-icons/lu";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { MdAddIcCall } from "react-icons/md";
 import img1 from '../assets/img1.jpg'
 const Navbar = () => {
   const location = useLocation();
@@ -28,7 +29,10 @@ const Navbar = () => {
               return (
 
                 <li key={link}>
-                    <NavLink to={link} className={`relative block px-3 text-sm py-2 transition hover:text-teal-500 dark:hover:text-teal-400  ${location.pathname == link && "text-teal-400"}`}>{name}</NavLink>
+                    <NavLink to={link} className={`relative block px-3 text-sm py-2 transition hover:text-teal-500 dark:hover:text-teal-400  ${location.pathname == link && "text-teal-400"}`}>{name}
+                    {location.pathname == link && <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>}
+                    </NavLink>
+                    
                 </li>
           )
             })}
@@ -40,8 +44,9 @@ const Navbar = () => {
           <p>Menu</p>
           <IoMdArrowDropdown size={19} />
         </div>  {/*bg-white/90 ring-zinc-900/5 */}
-        <div className='group cursor-pointer rounded-full  px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition bg-zinc-800/90 ring-white/10 hover:ring-white/20'>  {/*bg-white/90 ring-zinc-900/5 */}
-          <LuMoonStar size={20} className='text-zinc-300' />
+        <div className='group cursor-pointer rounded-full flex justify-between items-center space-x-2 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition bg-zinc-800/90 ring-white/10 hover:ring-white/20'>  {/*bg-white/90 ring-zinc-900/5 */}
+        
+          <MdAddIcCall size={20} className='text-zinc-300' />
         </div>
         </div>
     
