@@ -14,7 +14,7 @@ const About = () => {
                     <img
                       alt="Portrait of Kathan"
                       src={portraitImage}
-                      className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                      className="aspect-square rotate-3 border-2 border-dotted rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                       loading="lazy"
                       style={{ color: "transparent" }}
                     />
