@@ -42,7 +42,7 @@ const Home = () => {
       <section className="mt-16 sm:mt-20 bg-zinc-900 relative h-80 md:h-96">
         <div className="flex justify-center gap-5 -left-24 py-4 sm:gap-8 absolute ">
           {[...Array(images.length)].map((_, index) => (
-            <div key={index} className={` w-52 md:w-72 ${index % 2 === 0 ? '-rotate-2' : 'rotate-2'} rounded-2xl`}>
+            <div key={index} className={` w-52 md:w-72 ${index % 2 === 0 ? '-rotate-2' : 'rotate-2'} rounded-2xl transition-all duration-300 hover:scale-105 hover:rotate-0`}>
               <img alt="" src={images[index]} className="h-full w-full object-cover rounded-2xl" loading="lazy" style={{ color: "transparent" }} />
             </div>
           ))}
