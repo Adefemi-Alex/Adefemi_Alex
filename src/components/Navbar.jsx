@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className='px-6 md:px-12 lg:px-16 flex justify-between items-center py-6'>
       <Link to="/" className="block">
-      <div className="flex space-x-1 items-center">
+      <div className="flex space-x-1 items-center md:pl-10">
         <div className="w-11 h-11 bg-zinc-800 rounded-full">
           <img src={img1} className='rounded-full w-full p-1 border-zinc-500 object-cover' alt="" />
         </div>

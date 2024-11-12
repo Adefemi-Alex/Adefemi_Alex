@@ -25,4 +25,25 @@ body{
   height: 100%;
   background: #000;
 }
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 3px; /* Height of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ /* Background of the scrollbar track */
+  border-radius: 10px; /* Round edges for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2b2a2a; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Round edges for the handle */
+}
+
+/* Handle on hover */
+
+/* Optional: Style the scrollbar buttons (if needed) */
 
