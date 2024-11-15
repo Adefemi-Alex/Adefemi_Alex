@@ -4,11 +4,11 @@ import Loader from './components/Loader/Loader';
 import './App.css';
 
 const Layout = lazy(() => import('./pages/Layout'));
-const Home = lazy(() => import('./pages/Home/Home'));
+const Home = lazy(() => import('./pages/Home'));
 
 function App() {
   return (
-    <div className='App bg-black md:px-8 lg:px-14 overflow-hidden'>
+    <div className='App bg-black md:px-8 lg:px-14 2xl:px-[10%] overflow-hidden'>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path='/' element={<Layout />}>
