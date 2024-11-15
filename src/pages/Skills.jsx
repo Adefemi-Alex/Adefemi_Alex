@@ -1,5 +1,5 @@
 import React from 'react';
-import skillsData from '../../api/skillsData';
+import skillsData from '../api/skillsData';
 
 const Skills = () => {
   return (
@@ -46,7 +46,7 @@ const Skills = () => {
        
         @keyframes scroll{
           0% { transform: translateX(70%); }
-          100% { transform: translateX(-20%); }
+          100% { transform: translateX(-40%); }
         }
         @keyframes scrollRev{
           0% { transform: translateX(-20%); }
