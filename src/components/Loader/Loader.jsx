@@ -5,8 +5,8 @@ const Loader = () => {
         <div className="loader-container">
             <div className="loader">
                 <div className="box">
-                    <div className="logo">
-                        AA
+                    <div className="logo text-zinc-100 text-lg  font-bold">
+                        AA.
                     {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
