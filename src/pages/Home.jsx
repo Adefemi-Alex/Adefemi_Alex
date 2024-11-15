@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import About from '../About';
-import Img1 from "../../assets/img1.jpg";
-import Img2 from "../../assets/img2.jpg";
-import Skills from './skills';
-import Projects from '../Projects';
+import About from './About';
+import Img1 from "../assets/img1.jpg";
+import Img2 from "../assets/img2.jpg";
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
 
 const Home = () => {
     const images =[
@@ -24,10 +25,10 @@ const Home = () => {
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <div className="max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
-                  Software Engineer and Tech Enthusiast in Ogun, NG.
+                I&#x27;m <span className="text-teal-400">Alex Adefemi</span>, Software Developer and Engineer
                 </h1>
                 <p className="mt-6 text-base  text-zinc-400"> {/* text-zinc-600 */}
-                  I&#x27;m Alex Adefemi, a full stack developer and software engineer. Passionate about crafting digital solutions, I have been honing my skills and expanding my knowledge in web development, from frontend design to backend architecture. I'm driven by the ever-evolving tech landscape and love building products that make a difference.
+                  I am a full stack developer and software engineer. Passionate about crafting digital solutions, I have been honing my skills and expanding my knowledge in web development, from frontend design to backend architecture. I'm driven by the ever-evolving tech landscape and love building products that make a difference.
                 </p>
 
                 <div className="mt-6 flex gap-6">
@@ -53,6 +54,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   );
 };
