@@ -1,18 +1,18 @@
 export const navs = [
     {
         name: 'About',
-        link: '/about'
+        link: '#about'
+    },
+    {
+        name: 'Skills',
+        link: '#skills'
     },
     {
         name: 'Projects',
-        link: '/projects'
+        link: '#projects'
     },
     {
         name: 'Experience',
         link: '/experience'
     },
-    {
-        name: 'Uses',
-        link: '/uses'
-    }
 ]
