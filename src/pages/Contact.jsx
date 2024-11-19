@@ -35,7 +35,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder='Full Name'
-              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-200 rounded"
+              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-500 rounded"
             />
          
            
@@ -47,7 +47,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder='Email'
-              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-200 rounded"
+              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-500 rounded"
             />
           </div>
           <div className="mb-4">
