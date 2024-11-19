@@ -1,7 +1,7 @@
 import keystro from "../assets/projects/keystro.png";
 import artify from "../assets/projects/artify.png";
 import starOrganicFarms from "../assets/projects/star_organic.png"
-import keystroShot from "../assets/projects/keystro_Screenshot.png"
+import keystroShot from "../assets/projects/Keystro_Screenshot.png"
 import artifyShot from "../assets/projects/Artify_Screenshot.png"
 export const projectsData = [
     {
