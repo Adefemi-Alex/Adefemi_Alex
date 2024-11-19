@@ -2,7 +2,7 @@ import reactImg from "../assets/skills/React.svg";
 import htmlImg from "../assets/skills/html.svg";
 import cssImg from "../assets/skills/css.svg";
 import jsImg from "../assets/skills/Js.svg";
-import nodeImg from "../assets/skills/Nodejs.svg";
+import nodeImg from "../assets/skills/nodejs.svg";
 import materialUiImg from "../assets/skills/materialUi.svg";
 import mySqlImg from "../assets/skills/mysql.svg";
 import bootstrapImg from "../assets/skills/bootstrap.svg";
