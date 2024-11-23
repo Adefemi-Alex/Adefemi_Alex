@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 
+import 'aos/dist/aos.css';
 import Typewriter from 'typewriter-effect';
 const Home = () => {
     const images =[
@@ -51,10 +52,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mt-16 sm:mt-20 bg-zinc-900 relative h-80 md:h-96">
-        <div className="flex justify-center gap-5 -left-24 py-4 sm:gap-8 absolute animate-scroll">
+      <section className="mt-16 sm:mt-20 bg-zinc-900 relative h-80 md:h-72">
+        <div className="flex justify-center gap-5 -left-24  py-4 sm:gap-8 absolute animate-scroll">
           {[...Array(images.length)].map((_, index) => (
-            <div key={index} className={` w-52 md:w-72 ${index % 2 === 0 ? '-rotate-2' : 'rotate-2'} rounded-2xl transition-all duration-300 hover:scale-125 cursor-pointer hover:z-20 hover:rotate-0`}>
+            <div key={index} data-aos="fade-up" data-aos-delay={150 * index} className={` w-52 md:w-64 ${index % 2 === 0 ? '-rotate-4' : 'rotate-2'} rounded-2xl transition-all duration-300 hover:scale-125 cursor-pointer hover:z-20 hover:rotate-0`}>
               <img alt="My Pictures" src={images[index]} className="h-full w-full object-cover rounded-2xl" loading="lazy" style={{ color: "transparent" }} />
             </div>
           ))}
