@@ -22,10 +22,17 @@ const Contact = () => {
 
   return (
     <section className='relative' id='contact'>
-      <h2 className='pl-9 text-4xl font-bold text-center text-zinc-100'>Contact Me</h2>
-      <div className="px-9 py-16 mt-24 md:mt-0 h-full">
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto  p-6 rounded-lg shadow-lg">
-          <div className="mb-4 flex justify-evenly space-x-4">
+      <h2 className='pl-9 text-4xl font-bold text-center text-zinc-100'>Contact Me!</h2>
+      <div className="px-9 py-16 md:mt-0 h-full flex justify-center items-center space-x-4">
+        <div className="space-y-24">
+          <h2 className='text-4xl font-bold  text-zinc-100 w-[400px] leading-[3rem]'>Send me a message and I'll get back to you.</h2>
+          <p className=' text-zinc-50 text-lg'>
+            I look forward to hearing from you. <br />
+            Don't hesitate to reach out.
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className="  p-6 rounded-lg shadow-lg">
+          <div className="mb-4 space-y-6 justify-evenly ">
            
             <input
               type="text"
@@ -35,7 +42,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder='Full Name'
-              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-500 rounded"
+              className="w-full px-3 py-5 text-sm bg-transparent text-zinc-200 border-2 border-zinc-100 rounded"
             />
          
            
@@ -47,7 +54,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder='Email'
-              className="w-full p-2 bg-transparent text-zinc-200 border-[1px] border-x-zinc-500 rounded"
+              className="w-full px-3 py-5 text-sm bg-transparent text-zinc-200 border-2 border-zinc-100 rounded"
             />
           </div>
           <div className="mb-4">
