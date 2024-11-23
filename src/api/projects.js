@@ -3,6 +3,8 @@ import artify from "../assets/projects/artify.png";
 import starOrganicFarms from "../assets/projects/star_organic.png"
 import keystroShot from "../assets/projects/Keystro_Screenshot.png"
 import artifyShot from "../assets/projects/Artify_Screenshot.png"
+import starOrganicShot from "../assets/projects/StarOrganic_Screenshot.png"
+
 export const projectsData = [
     {
         name: 'Keystro',
@@ -21,7 +23,8 @@ export const projectsData = [
     },
     {
         name: 'Star Organic Farms',
-        img: starOrganicFarms, // Replace with actual logo URLs
+        img: starOrganicFarms,
+        screenshot: starOrganicShot,
         info: 'Star Organic Farms is an e-commerce site i built when i had just started coding which was filled with a lot of memories. It consists of farm produce sold by farmers and bought by retailers or consumers. It has a gallery section where you can view different product sections',
         link: 'https://star-organic-farms-p6wj.vercel.app/',
     },
