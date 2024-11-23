@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { MdAddIcCall } from "react-icons/md";
 import img1 from '../assets/img1.jpg'
 
-import AOS from 'aos';  
+// import AOS from 'aos';  
 import 'aos/dist/aos.css';
 const Navbar = () => {
   const location = useLocation();
@@ -48,7 +48,8 @@ const Navbar = () => {
           <p>Menu</p>
           <IoMdArrowDropdown size={19} />
         </div>  {/*bg-white/90 ring-zinc-900/5 */}
-        <div className='group cursor-pointer rounded-full flex justify-between items-center space-x-2 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition bg-zinc-800/90 ring-white/10 hover:ring-white/20'>  {/*bg-white/90 ring-zinc-900/5 */}
+        <div className='group cursor-pointer rounded-full flex justify-between items-center space-x-2 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition bg-zinc-800/90 ring-white/10 hover:ring-white/20'
+        id="contact">  {/*bg-white/90 ring-zinc-900/5 */}
         
           <MdAddIcCall size={20} className='text-zinc-300' />
         </div>
