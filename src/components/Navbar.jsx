@@ -8,15 +8,17 @@ import img1 from '../assets/img1.jpg'
 
 // import AOS from 'aos';  
 import 'aos/dist/aos.css';
+import MobileNav from './MobileNav';
 const Navbar = () => {
   const location = useLocation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [modalOpen, setModal] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const toggleModal = () => {
+    setModal(!modalOpen);
   };
   return (
     <nav className='px-6 md:px-12 lg:px-16 flex justify-between items-center py-6'>
+       {modalOpen && <MobileNav setModal={setModal} />}
       <Link to="/" className="block">
       <div className="flex space-x-1 items-center md:pl-10" 
       data-aos="fade-right">
@@ -43,16 +45,19 @@ const Navbar = () => {
         </ul>
         <div className="flex space-x-2 md:space-x-0">
 
-        <div className='flex md:hidden space-x-1 items-center justify-between group cursor-pointer rounded-full  px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition text-zinc-400 bg-zinc-800/90 ring-white/10 hover:ring-white/20'
-        onClick={toggleMenu}>
+        <div className='flex  md:hidden space-x-1 items-center justify-between group cursor-pointer rounded-full  px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition text-zinc-400 bg-zinc-800/90 ring-white/10 hover:ring-white/20'
+        onClick={toggleModal}>
           <p>Menu</p>
           <IoMdArrowDropdown size={19} />
+         
         </div>  {/*bg-white/90 ring-zinc-900/5 */}
+        <a href='#contact'>
         <div className='group cursor-pointer rounded-full flex justify-between items-center space-x-2 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1  backdrop-blur transition bg-zinc-800/90 ring-white/10 hover:ring-white/20'
-        id="contact">  {/*bg-white/90 ring-zinc-900/5 */}
+        >  {/*bg-white/90 ring-zinc-900/5 */}
         
           <MdAddIcCall size={20} className='text-zinc-300' />
         </div>
+        </a>
         </div>
     
     </nav>
