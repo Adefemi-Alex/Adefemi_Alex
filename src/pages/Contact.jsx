@@ -21,11 +21,11 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative' id='contact'>
+    <section className='relative py-10 md:py-0' id='contact'>
       <h2 className='pl-9 text-4xl font-bold text-center text-zinc-100'>Contact Me!</h2>
-      <div className="px-9 py-16 md:mt-0 h-full flex justify-center items-center space-x-4">
-        <div className="space-y-24">
-          <h2 className='text-4xl font-bold  text-zinc-100 w-[400px] leading-[3rem]'>Send me a message and I'll get back to you.</h2>
+      <div className="px-9 py-16 md:mt-0 h-full flex flex-col lg:flex-row  justify-center items-center space-x-4">
+        <div className="space-y-24 text-center md:text-left px-2 md:px-0">
+          <h2 className=' text-xl md:text-4xl font-bold  text-zinc-100 w-[400px] leading-[3rem]'>Send me a message and I'll get back to you.</h2>
           <p className=' text-zinc-50 text-lg'>
             I look forward to hearing from you. <br />
             Don't hesitate to reach out.
@@ -71,12 +71,13 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white py-2 rounded hover:bg-blue-500 transition"
+            className="w-full bg-teal-600 cursor-pointer text-white py-2 rounded transition"
           >
             Send Message
           </button>
         </form>
       </div>
+      <p className='text-center text-zinc-100 text-xl'>Thank you😎</p>
     </section>
   );
 };
