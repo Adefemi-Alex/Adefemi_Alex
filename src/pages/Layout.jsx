@@ -5,9 +5,11 @@ import Footer from '../components/Footer'
 
 const Layout = () => {
   return (
-    <div className="bg-zinc-900 h-full border-x-[0.4px] border-x-gray-500">
+    <div className="h-full w-full relative">
       <Navbar />
-      <Outlet /> 
+      <div className="pt-32">
+        <Outlet /> 
+      </div>
       <Footer />
     </div>
   )

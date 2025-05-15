@@ -1,7 +1,6 @@
 import { Suspense, lazy, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
-import './App.css';
 import Aos from 'aos';
 
 const Layout = lazy(() => import('./pages/Layout'));
@@ -12,7 +11,7 @@ function App() {
     Aos.init();
   })
   return (
-    <div className='App bg-black md:px-8 lg:px-14 2xl:px-[10%] overflow-hidden'>
+    <div className='App  overflow-hidden'>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path='/' element={<Layout />}>
