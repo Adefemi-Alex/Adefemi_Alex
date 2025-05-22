@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         theme: "#B5FF6D",
-        dark_bg:"#242424",
+        bacg:"#0A0A0A",
         dark_card: ""
       },
       boxShadow: {

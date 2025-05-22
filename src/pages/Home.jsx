@@ -83,7 +83,7 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/alex-adefemi-848abb269" target='_blank'>
                 <FaLinkedin size={23} className='text-zinc-200 ' />
               </a>
-              <div className="cursor-pointer hover:bg-theme hover:scale-95 transition-all ease-in-out flex items-center relative text-zinc-950 px-3 py-1 bg-slate-100 before:absolute before:border-b-2 before:border-r-2 before:border-slate-100 before:w-full before:h-full before:-z-20 before:-bottom-2 before:left-2">
+              <div className="cursor-pointer hover:bg-theme hover:scale-95 transition-all ease-in-out  flex items-center relative text-zinc-950 px-3 py-1 bg-slate-100 before:absolute before:border-b-2 before:border-r-2 before:border-slate-100 before:w-full before:h-full before:-z-20 before:-bottom-2 before:left-2">
                 <p className='text-lg'>Download CV</p>
                 <GoArrowUpRight size={20} />
               </div>

@@ -1,9 +1,11 @@
 import keystro from "../assets/projects/keystro.png";
 import picSpace from "../assets/projects/PicSpace.png";
+import readNest from "../assets/projects/readNest.png"
 import artify from "../assets/projects/artify.png";
 import starOrganicFarms from "../assets/projects/star_organic.png"
 import keystroShot from "../assets/projects/Keystro_Screenshot.png"
 import picSpaceShot from "../assets/projects/PicSpace_Screenshot.png";
+import readNestShot from "../assets/projects/ReadNest_Screenshot.png";
 import artifyShot from "../assets/projects/Artify_Screenshot.png"
 import starOrganicShot from "../assets/projects/StarOrganic_Screenshot.png"
 
@@ -21,6 +23,13 @@ export const projectsData = [
         screenshot: picSpaceShot,
         info: 'Keystro is an innovative eCommerce platform designed to simplify online shopping. It features a user-friendly interface that allows customers to easily browse, search, and purchase products. With secure payment options and a streamlined checkout process, Keystro ensures a seamless shopping experience, making it a go-to solution for both shoppers and merchants alike.',
         link: 'https://pic-space-ten.vercel.app/',
+    },
+    {
+        name: 'ReadNest',
+        img: readNest,
+        screenshot: readNestShot,
+        info: 'Keystro is an innovative eCommerce platform designed to simplify online shopping. It features a user-friendly interface that allows customers to easily browse, search, and purchase products. With secure payment options and a streamlined checkout process, Keystro ensures a seamless shopping experience, making it a go-to solution for both shoppers and merchants alike.',
+        link: 'https://read-nest-aosl.vercel.app/',
     },
 
     {
